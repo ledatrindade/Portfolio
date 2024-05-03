@@ -27,8 +27,18 @@ header > .interface {
 }
 
 header a {
+    display: inline-block;
     color: #000;
+    text-decoration: none; /* Remove sublinhado dos links */
+    transition: .2s;
+    
 }
+
+header a:hover{
+    color: #8C52FF;
+    transform: scale(1.10);
+}
+
 
 /* Correção: Seletores ajustados para corrigir a estrutura HTML */
 header nav ul {
@@ -50,13 +60,10 @@ header nav.menu-dektop ul {
 }
 
 header nav.menu-dektop ul li {
-    display: inline-block;
     margin-right: 15px;
 }
 
 header nav.menu-dektop ul li a {
-    color: #000; /* Cor dos links */
-    text-decoration: none; /* Remove sublinhado dos links */
     font-variant: small-caps;
 }
 
@@ -77,4 +84,5 @@ header nav.menu-dektop ul li a {
 
 .lt-contato button:hover {
     background-color: #8C52FF; /* Altera a cor de fundo ao passar o mouse */
+    box-shadow: 0px 0px 5px #000;
 }
