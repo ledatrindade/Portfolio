@@ -1,0 +1,80 @@
+/* estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+body {
+    background-color: #FFFFFF;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #000;
+}
+
+/* Correção: Seletores ajustados para corrigir a estrutura HTML */
+header nav ul {
+    list-style-type: none;
+    margin: 0; /* Remover o espaçamento padrão da lista */
+    padding: 0; /* Remover o espaçamento interno da lista */
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 15px; /* Adiciona um espaçamento entre os itens do menu */
+}
+
+/* Estilos para o menu de navegação */
+header nav.menu-dektop ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav.menu-dektop ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+header nav.menu-dektop ul li a {
+    color: #000; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-variant: small-caps;
+}
+
+/* Adiciona estilo ao botão */
+.lt-contato button {
+
+    font-weight: bold;
+    font-variant: small-caps;
+    background-color: #FFDE59; /* Cor de fundo azul */
+    color: #000; /* Cor do texto branco */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Borda arredondada */
+    text-decoration: none; /* Remove sublinhado do texto */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+    transition: background-color 0.3s; /* Adiciona uma transição suave na mudança de cor de fundo */
+}
+
+.lt-contato button:hover {
+    background-color: #8C52FF; /* Altera a cor de fundo ao passar o mouse */
+}
